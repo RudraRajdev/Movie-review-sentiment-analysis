@@ -55,8 +55,8 @@ if st.button("Classify"):
     
         #Make prediction
     pred=model.predict(preprocess_input)
-    sentiment='Positive' if pred[0][0]>0.5 else 'Nagative'
+    sentiment='Positive' if pred[0][0]>0.5 else 'Negative'
 
-    st.write(f'Sentiment:{sentiment}')
-    st.write(f'Prediction score:{pred[0][0]}')
+    st.write(f'Sentiment: {sentiment}')
+    st.write(f'Prediction score: {pred[0][0]}')
     
